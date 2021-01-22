@@ -7,7 +7,7 @@
   
 }
 body {
-  background: linear-gradient(to right top, darkcyan,fuchsia );
+ background: linear-gradient(to left bottom, rgb(175, 125, 125), rgb(70, 106, 117) );
 }
 .calculator {
   height: 100vh;
@@ -17,34 +17,42 @@ body {
   justify-content: center;
   align-content: center;
   grid-template-columns: repeat(4, 100px);
-  grid-template-rows: minmax(120px, auto) repeat(5, 
-  100px) ;
+  grid-template-rows: minmax(120px, auto) repeat(6, 
+  100px);
+  
+}
+.double{
+  grid-column: span 2;
+  background-color: rgb(255, 178, 35);
   
 }
 .calculator > button{
   font-size: 2rem;
-  font-weight: 600;
-  background-color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;  
   cursor: pointer;
   outline: none;
   border: 1px solid black;
+  border-radius: 2rem;
+  
+}
+.calculator > button:hover{
+  background-color: rgba(255, 255, 255, 0.7)
+}
+.calculator > div{
+  border: 1px solid rgb(170, 163, 163);
+}
 
-}
-.double{
-  grid-column: span 2;
-}
 .output{
   grid-column: 1/ -1;
   background: rgba(0, 0, 0, 0.8);
-  
-  height: 9rem;
+  border-radius: 1rem;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
   flex-direction: column;
   padding: 10px;
-  word-wrap: break-word;
-  
+  word-break: break-all;
+  margin: 2px;
 }
 
 

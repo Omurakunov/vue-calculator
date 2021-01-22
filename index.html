@@ -7,29 +7,30 @@
   <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-  <div class="calculator">
+  <div class="calculator" id="app">
+    
     <div class="output">
-      <div class="previous"></div>
-      <div class="new"></div>
+      <div class="new"> {{ value }} </div>
     </div>
-    <button class="double">C</button>
-    <button><=</button>
-    <button>/</button>
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>x</button>
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>-</button>
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button>+</button>
-    <button id="radious2">.</button>
-    <button>0</button>
-    <button class="double" id="radious1">=</button>
+
+    <button @click="write('1')">1</button>
+    <button @click="write('2')">2</button>
+    <button @click="write('3')">3</button>
+    <button @click="percentage">%</button>
+    <button @click="write('4')">4</button>
+    <button @click="write('5')">5</button>
+    <button @click="write('6')">6</button>
+    <button @click="write('/')">/</button>
+    <button @click="write('7')">7</button>
+    <button @click="write('8')">8</button>
+    <button @click="write('9')">9</button>
+    <button @click="write('*')">*</button>
+    <button @click="writeDote('.')">.</button>
+    <button @click="write('0')">0</button>
+    <button @click="write('-')">-</button>
+    <button @click="write('+')">+</button>
+    <button @click="calculate" class="double">=</button>
+    <button @click="delAll" class="double">C</button>
   </div>
 
   <script src="https://unpkg.com/vue@next"></script>
