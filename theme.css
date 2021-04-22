@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Yusei Magic', sans-serif;
-  
+  font-family: sans-serif;
 }
 body {
- background: linear-gradient(to left bottom, rgb(175, 125, 125), rgb(70, 106, 117) );
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  
 }
 .calculator {
   height: 100vh;
-  width: 100%;
   border-radius: 1rem;
   display: grid;
   justify-content: center;
@@ -19,12 +18,10 @@ body {
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: minmax(120px, auto) repeat(6, 
   100px);
-  
 }
 .double{
   grid-column: span 2;
   background-color: rgb(255, 178, 35);
-  
 }
 .calculator > button{
   font-size: 2rem;
@@ -32,7 +29,6 @@ body {
   cursor: pointer;
   outline: none;
   border: 1px solid black;
-  border-radius: 2rem;
   
 }
 .calculator > button:hover{
@@ -45,21 +41,16 @@ body {
 .output{
   grid-column: 1/ -1;
   background: rgba(0, 0, 0, 0.8);
-  border-radius: 1rem;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
   flex-direction: column;
   padding: 10px;
   word-break: break-all;
-  margin: 2px;
 }
-
-
 .new{
   color: aliceblue;
   font-size: 3rem;
-  
 }
 .previous{
   color: rgb(177, 178, 179);

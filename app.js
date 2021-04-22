@@ -8,7 +8,7 @@ Vue.createApp({
   },
   methods: {
     write(num){
-      this.value = ` ${this.value + num}`
+      this.value = `${this.value + num}`
     },
     delAll(){
       this.value = ''
